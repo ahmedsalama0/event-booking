@@ -1,35 +1,31 @@
-# event-registeration
+# **Event Booking App (Vue 3)**
 
-This template should help get you started developing with Vue 3 in Vite.
+## **Overview**
 
-## Recommended IDE Setup
+This is an Event Booking application built with Vue 3. It allows users to book events, manage their bookings, and provides real-time feedback with an optimized user experience.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## **Features**
 
-## Customize configuration
+- ✅ **Load Events & Bookings**: Fetch events and bookings from the server.
+- ✅ **Book an Event**: Users can book an event (via an HTTP request).
+- ✅ **Optimistic UI**: Feedback appears instantly to the user.
+- ✅ **Loading Indicators**: Prevents layout shifts with placeholder skeletons.
+- ✅ **Validation & Error Handling**:
+  - Users cannot book the same event twice.
+  - Users cannot cancel a booking before the server confirms it.
+  - HTTP request validation and error handling.
+- ✅ **Delete a Booking**: Users can remove bookings (via a DELETE request).
+- ✅ **Component Reusability**: Uses Vue composables to manage reusable stateful logic.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## **Tech Stack**
 
-## Project Setup
+- **Frontend:** Vue 3, HTML, CSS, JavaScript
+- **Styling:** Tailwind CSS
+- **API:** Mock API Server or Real API (Configurable)
+- **Data Fetching:** Fetch API or Axios
 
-```sh
-npm install
-```
+## **Usage**
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- **Browse Events**: View all available events.
+- **Book an Event**: Click the booking button and get instant feedback.
+- **Manage Bookings**: Create, cancel bookings.
